@@ -12,6 +12,15 @@ export const TopContent = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 90px;
+  margin-bottom: 60px;
+`;
+
+export const Divisor = styled.div`
+  background: #3a3b3c;
+
+  max-width: 200px;
+  height: 1px;
+  margin: 0 auto;
 `;
 
 export const Description = styled.div`
@@ -69,4 +78,26 @@ export const Background = styled.div`
   width: 100%;
 `;
 
-export const MidContent = styled.div``;
+export const MidContent = styled.div`
+  max-width: 1100px;
+
+  margin: 40px auto;
+  margin-top: 60px;
+
+  div.descMid {
+    text-align: center;
+
+    margin-bottom: 60px;
+
+    h2 {
+      font-size: 20px;
+      color: #ffb709;
+      font-weight: 300;
+    }
+  }
+
+  div.cards {
+    display: flex;
+    align-items: center;
+  }
+`;

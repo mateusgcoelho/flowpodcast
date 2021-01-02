@@ -8,7 +8,9 @@ import {
   RiAmazonFill,
   RiDiscordFill,
 } from 'react-icons/ri';
+
 import Card from '../../components/Card';
+import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 
 import {
@@ -18,6 +20,7 @@ import {
   TopContent,
   MidContent,
   Description,
+  Divisor,
 } from './styles';
 
 const Home: React.FC = () => {
@@ -63,8 +66,22 @@ const Home: React.FC = () => {
             </div>
           </Description>
         </TopContent>
-        <MidContent>{/* <Card /> */}</MidContent>
+
+        <Divisor />
+
+        <MidContent>
+          <div className="descMid">
+            <h1>Caso tenha Perdido</h1>
+            <h2>OUÇA NOSSOS EPISÓDIOS</h2>
+          </div>
+
+          <div className="cards">
+            <Card />
+            <Card />
+          </div>
+        </MidContent>
       </Main>
+      <Footer />
     </Container>
   );
 };
