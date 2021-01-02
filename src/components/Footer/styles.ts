@@ -13,10 +13,16 @@ export const Container = styled.div`
   justify-content: space-between;
 
   nav {
+    h1 {
+      font-size: 16px;
+    }
     ul {
       list-style: none;
+      padding: 5px 10px;
 
       a {
+        font-weight: 300;
+        color: #b0b2b6;
         text-decoration: none;
         color: white;
 
@@ -37,6 +43,10 @@ export const Container = styled.div`
 
       &:hover {
         color: #b0b2b6;
+      }
+
+      & + a {
+        margin-left: 8px;
       }
     }
   }

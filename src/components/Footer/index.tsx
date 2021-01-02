@@ -5,8 +5,9 @@ import {
   RiSpotifyFill,
   RiYoutubeFill,
   RiAppleFill,
-  RiAmazonFill,
+  RiInstagramFill,
   RiDiscordFill,
+  RiFacebookFill,
 } from 'react-icons/ri';
 
 import FlowLogo from '../../assets/FlowLogo.png';
@@ -25,6 +26,7 @@ const Footer: React.FC = () => {
       </div>
 
       <nav>
+        <h1>NAVEGAÇÃO</h1>
         <ul>
           <a href="">
             <li>Inicio</li>
@@ -46,22 +48,19 @@ const Footer: React.FC = () => {
 
       <div className="socialmedia">
         <a href="#">
-          <RiTwitchFill size={30} />
-        </a>
-        <a href="#">
-          <RiSpotifyFill size={30} />
+          <RiTwitchFill size={27} />
         </a>
         <a href="">
-          <RiYoutubeFill size={30} />
+          <RiYoutubeFill size={27} />
         </a>
         <a href="">
-          <RiAppleFill size={30} />
+          <RiDiscordFill size={27} />
         </a>
         <a href="">
-          <RiDiscordFill size={30} />
+          <RiFacebookFill size={27} />
         </a>
         <a href="">
-          <RiAmazonFill size={30} />
+          <RiInstagramFill size={27} />
         </a>
       </div>
     </Container>
