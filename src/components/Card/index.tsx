@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { Container } from './styles';
 
@@ -16,7 +17,7 @@ const Card: React.FC = () => {
         <p>Andam dizendo que o tuê é o demônio... Obs: ele chegou de corsa.</p>
       </div>
 
-      <a href="">VER MAIS</a>
+      <a href="/episodes/matue">VER MAIS</a>
     </Container>
   );
 };

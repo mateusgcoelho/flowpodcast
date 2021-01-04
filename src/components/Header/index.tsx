@@ -34,7 +34,16 @@ const Header: React.FC = () => {
           <Link title="Loja" to="/">
             <RiShoppingBagLine size={23} />
           </Link>
-          <Link title="Episódios" to="/">
+          <Link
+            title="Episódios"
+            className={
+              location.pathname === '/episodes/matue' ||
+              location.pathname === '/episodes'
+                ? 'here'
+                : ''
+            }
+            to="/episodes"
+          >
             <RiTv2Line size={23} />
           </Link>
           <Link title="Contato" to="/">
